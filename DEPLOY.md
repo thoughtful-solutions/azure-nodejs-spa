@@ -34,7 +34,7 @@ set WEBURL=https://faasstorage111.z35.web.core.windows.net/
 ```
 ```
 az storage account show-connection-string --name %STORAGE_ACCOUNT% --resource-group %RESOURCE_GROUP% --output tsv 
-set CONNSTR ="DefaultEndpointsProtocol=https;EndpointSuffix=core.windows.net;AccountName=faasstorage111;AccountKey=CU1t3PLOhHEA8ThmhMbo8UDUGUJXTHfk51XxYPgZWJqJHVRM5GlZb0U+FFmrwSYQM0uNX8ikku1G+ASt9KacbA==;BlobEndpoint=https://faasstorage111.blob.core.windows.net/;FileEndpoint=https://faasstorage111.file.core.windows.net/;QueueEndpoint=https://faasstorage111.queue.core.windows.net/;TableEndpoint=https://faasstorage111.table.core.windows.net/"
+set CONNSTR ="D....."
 ```
 
 ## Update the MS Entra App 
@@ -50,7 +50,7 @@ az ad app permission add --id %APPID% --api 00000003-0000-0000-c000-000000000000
 ```
 az ad app credential reset --id %APPID% --query password
 
-set CLIENT_SECRET="0W48Q~v6cSpl3SiFMcOMLYlvq42JcX--qcBxAbq8"
+set CLIENT_SECRET="...password"
 ```
 
 ## Build SPA Template app in JavaScript
